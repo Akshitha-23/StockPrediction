@@ -2,7 +2,7 @@ import yfinance as yf
 import streamlit as st
 st.title("Simple Stock Price App")
 tickerName = st.text_input("Enter name of the company ")
-tickerSymbol =st.text_input("Enter its ticker")
+tickerSymbol = str(st.text_input("Enter its ticker"))
 #get data on this ticker
 tickerData = yf.Ticker(tickerSymbol)
 #get the historical prices for this ticker
